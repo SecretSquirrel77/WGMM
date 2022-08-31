@@ -83,7 +83,7 @@
     ]
   },
   "url": "",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://raw.githubusercontent.com/SecretSquirrel77/WGMM/main/module.json",
+  "download": "https://raw.githubusercontent.com/SecretSquirrel77/WGMM/main/WGMM.zip",
   "manifestPlusVersion": "1.2.0"
 }
