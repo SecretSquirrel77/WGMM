@@ -1,76 +1,66 @@
 {
-  "name": "wanderers-guide-2-merchants-n-magic",
-  "title": "Wanderer's Guide to Merchants & Magic",
-  "description": "Get everything you need to make dealing with magic items in 5E easy and fun with 23 Unique Magic Shops; 120 New Magic Items; including Price Lists; 4 Magical Adventures; Rules & Rolling Tables for trading magic items!",
-  "version": "0.8.6",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "9",
-  "author": "Content by Eventyr Games & Conversion by sigma Productions",
+  "id": "wgmm",
+  "name": "wgmm",
+  "title": "WGMM",
+  "description": "WGMM",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": "0.8.6",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "author": "MWK",
   "authors": [
     {
-      "name": "Content by: Eventyr Games",
-      "url": "https://eventyrgames.com/",
-      "patreon": "http://patreon.com/eventyr",
-      "discord server": "https://discord.gg/kbQ4AaKV",
-      "youtube": "https://www.youtube.com/channel/UC2-P_xrkt_8Vh4tQfoXdhug",
-      "twitter": "https://twitter.com/eventyrgames"
-    },
-    {
-      "name": "Conversion by: sigma Productions",
-      "discord": "Sigma Productions#5051",
-      "discord server": "https://discord.gg/aPcSDAHQYD",
-      "ko-fi": "https://ko-fi.com/sigmaproductions"
+      "name": "MWK"
     }
   ],
   "packs": [
     {
-      "name": "maps",
-      "label": "Wanderer's Guide to Merchants & Magic",
-      "path": "/packs/maps.db",
-      "entity": "Scene",
-      "type": "Scene"
-    },
-    {
       "name": "actors",
-      "label": "Wanderer's Guide to Merchants & Magic",
+      "label": "WGMM",
       "path": "/packs/actors.db",
       "entity": "Actor",
-      "type": "Actor"
+      "type": "Actor",
+      "system": "dnd5e"
+    },
+    {
+      "name": "items",
+      "label": "WGMM",
+      "path": "/packs/items.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "dnd5e"
     },
     {
       "name": "journals",
-      "label": "Wanderer's Guide to Merchants & Magic",
+      "label": "WGMM",
       "path": "/packs/journals.db",
       "entity": "JournalEntry",
       "type": "JournalEntry"
     },
     {
-      "name": "items",
-      "label": "Wanderer's Guide to Merchants & Magic",
-      "path": "/packs/items.db",
-      "entity": "Item",
-      "type": "Item"
-    },
-    {
-      "name": "rolltables",
-      "label": "Wanderer's Guide to Merchants & Magic",
-      "path": "/packs/rolltables.db",
-      "entity": "RollTable",
-      "type": "RollTable"
-    },
-    {
       "name": "macros",
-      "label": "Wanderer's Guide to Merchants & Magic",
+      "label": "WGMM",
       "path": "/packs/macros.db",
       "entity": "Macro",
       "type": "Macro"
     },
     {
       "name": "playlists",
-      "label": "Wanderer's Guide to Merchants & Magic",
+      "label": "WGMM",
       "path": "/packs/playlists.db",
       "entity": "Playlist",
       "type": "Playlist"
+    },
+    {
+      "name": "rolltables",
+      "label": "WGMM",
+      "path": "/packs/rolltables.db",
+      "entity": "RollTable",
+      "type": "RollTable"
     }
   ],
   "esmodules": [
@@ -83,17 +73,17 @@
       "type": "module"
     }
   ],
-  "styles": [
-    "styles/sigmaP.css"
-  ],
-  "manifest": "https://foundryvtt.s3-us-west-2.amazonaws.com/modules/wanderers-guide-2-merchants-n-magic/module.json",
-  
-  "protected": true,
-  "manifestPlusVersion": "1.2.0",
-  "readme": "https://gitlab.com/sigmaProductions/wgtmm/-/blob/ae30910cd65385d1c0c96cf0362094f919c9cedd/README.md",
-  "bugs": "https://gitlab.com/sigmaProductions/wgtmm/-/blob/ae30910cd65385d1c0c96cf0362094f919c9cedd/KnownBugs",
-  "changelog": "https://gitlab.com/sigmaProductions/wgtmm/-/blob/ae30910cd65385d1c0c96cf0362094f919c9cedd/CHANGELOG",
-  "flags": {
-    "allowBugReporter": true
-  }
+  "relationships": {
+    "requires": [
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "manifestPlusVersion": "1.2.0"
 }
